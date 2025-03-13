@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>OpenBuffet.Logger.Core</id>
+    <version>1.0.0</version>
+    <title>OpenBuffet.Logger</title>
+    <authors>OpenBuffet.Logger.Core</authors>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <license type="file">LICENSE</license>
+    <licenseUrl>https://aka.ms/deprecateLicenseUrl</licenseUrl>
+    <icon>food-delivery.png</icon>
+    <readme>README.md</readme>
+    <projectUrl>https://github.com/ferdikurnazdm/OpenBuffet.Logger</projectUrl>
+    <description>.net core logger project</description>
+    <releaseNotes>first release</releaseNotes>
+    <copyright>2025</copyright>
+    <tags>.net core logger</tags>
+    <repository type="git" url="https://github.com/ferdikurnazdm/OpenBuffet.Logger" commit="346fc5615c2b16036c8e03ccbf8bb956089d5f3d" />
+    <dependencies>
+      <group targetFramework="net8.0">
+        <dependency id="Microsoft.Extensions.DependencyInjection" version="9.0.3" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+    <contentFiles>
+      <files include="any/net8.0/food-delivery.ico" buildAction="Content" />
+    </contentFiles>
+  </metadata>
+  <files>
+    <file src="D:\Users\ferdi.kurnaz\source\repos\OpenBuffet.Logger\src\OpenBuffet.Logger.Core\bin\Debug\net8.0\OpenBuffet.Logger.Core.dll" target="lib\net8.0\OpenBuffet.Logger.Core.dll" />
+    <file src="D:\Users\ferdi.kurnaz\source\repos\OpenBuffet.Logger\src\OpenBuffet.Logger.Core\food-delivery.ico" target="content\food-delivery.ico" />
+    <file src="D:\Users\ferdi.kurnaz\source\repos\OpenBuffet.Logger\src\OpenBuffet.Logger.Core\food-delivery.ico" target="contentFiles\any\net8.0\food-delivery.ico" />
+    <file src="D:\Folders\Pictures\03_20240117_IMAGES\food-delivery.png" target="\food-delivery.png" />
+    <file src="D:\Users\ferdi.kurnaz\source\repos\OpenBuffet.Logger\LICENSE" target="\LICENSE" />
+    <file src="D:\Users\ferdi.kurnaz\source\repos\OpenBuffet.Logger\README.md" target="\README.md" />
+  </files>
+</package>

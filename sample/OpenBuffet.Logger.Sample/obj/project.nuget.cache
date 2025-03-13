@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "egTGmH6Yf2I=",
+  "success": true,
+  "projectFilePath": "D:\\Users\\ferdi.kurnaz\\source\\repos\\OpenBuffet.Logger\\sample\\OpenBuffet.Logger.Sample\\OpenBuffet.Logger.Sample.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ferdi.kurnaz\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\9.0.3\\microsoft.extensions.dependencyinjection.9.0.3.nupkg.sha512",
+    "C:\\Users\\ferdi.kurnaz\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\9.0.3\\microsoft.extensions.dependencyinjection.abstractions.9.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

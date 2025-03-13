@@ -1,0 +1,47 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35707.178
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "doc", "doc", "{9D6AE678-AAB7-4933-81D4-75AA9B5DCBA9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{526FB8C3-22E4-4859-B831-87E9399D71D0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sample", "sample", "{A2CA824C-5B77-4B5C-8EDF-FE5D0C953405}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{CA64D835-992D-4860-9DF0-37BE3EE8DE0E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenBuffet.Logger.Test", "test\OpenBuffet.Logger.Test\OpenBuffet.Logger.Test.csproj", "{9BC9E9E5-F467-4DC1-A052-95BF686E7C85}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenBuffet.Logger.Core", "src\OpenBuffet.Logger.Core\OpenBuffet.Logger.Core.csproj", "{FFA5CE4B-8778-4267-B69C-02CF17E20F3E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenBuffet.Logger.Sample", "sample\OpenBuffet.Logger.Sample\OpenBuffet.Logger.Sample.csproj", "{438EED20-129D-4E00-A64A-F3BDC29B94C2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9BC9E9E5-F467-4DC1-A052-95BF686E7C85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BC9E9E5-F467-4DC1-A052-95BF686E7C85}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BC9E9E5-F467-4DC1-A052-95BF686E7C85}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BC9E9E5-F467-4DC1-A052-95BF686E7C85}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FFA5CE4B-8778-4267-B69C-02CF17E20F3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFA5CE4B-8778-4267-B69C-02CF17E20F3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFA5CE4B-8778-4267-B69C-02CF17E20F3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFA5CE4B-8778-4267-B69C-02CF17E20F3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{438EED20-129D-4E00-A64A-F3BDC29B94C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{438EED20-129D-4E00-A64A-F3BDC29B94C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{438EED20-129D-4E00-A64A-F3BDC29B94C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{438EED20-129D-4E00-A64A-F3BDC29B94C2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9BC9E9E5-F467-4DC1-A052-95BF686E7C85} = {CA64D835-992D-4860-9DF0-37BE3EE8DE0E}
+		{FFA5CE4B-8778-4267-B69C-02CF17E20F3E} = {526FB8C3-22E4-4859-B831-87E9399D71D0}
+		{438EED20-129D-4E00-A64A-F3BDC29B94C2} = {A2CA824C-5B77-4B5C-8EDF-FE5D0C953405}
+	EndGlobalSection
+EndGlobal
