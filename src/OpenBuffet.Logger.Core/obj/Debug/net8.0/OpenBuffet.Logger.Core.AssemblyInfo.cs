@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCopyrightAttribute("2025")]
 [assembly: System.Reflection.AssemblyDescriptionAttribute(".net core logger project")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+346fc5615c2b16036c8e03ccbf8bb956089d5f3d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3141a5e5a4f6930ffefa814d4c936f02d4dba4d1")]
 [assembly: System.Reflection.AssemblyProductAttribute("OpenBuffet.Logger.Core")]
 [assembly: System.Reflection.AssemblyTitleAttribute("OpenBuffet.Logger.Core")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

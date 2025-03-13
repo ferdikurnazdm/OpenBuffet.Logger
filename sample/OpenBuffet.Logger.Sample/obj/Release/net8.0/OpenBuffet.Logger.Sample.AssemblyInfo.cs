@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("OpenBuffet.Logger.Sample")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+346fc5615c2b16036c8e03ccbf8bb956089d5f3d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3141a5e5a4f6930ffefa814d4c936f02d4dba4d1")]
 [assembly: System.Reflection.AssemblyProductAttribute("OpenBuffet.Logger.Sample")]
 [assembly: System.Reflection.AssemblyTitleAttribute("OpenBuffet.Logger.Sample")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

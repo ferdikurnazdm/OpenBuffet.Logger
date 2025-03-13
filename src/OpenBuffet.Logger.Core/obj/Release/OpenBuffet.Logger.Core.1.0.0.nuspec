@@ -15,7 +15,7 @@
     <releaseNotes>first release</releaseNotes>
     <copyright>2025</copyright>
     <tags>.net core logger</tags>
-    <repository type="git" url="https://github.com/ferdikurnazdm/OpenBuffet.Logger" commit="346fc5615c2b16036c8e03ccbf8bb956089d5f3d" />
+    <repository type="git" url="https://github.com/ferdikurnazdm/OpenBuffet.Logger" commit="3141a5e5a4f6930ffefa814d4c936f02d4dba4d1" />
     <dependencies>
       <group targetFramework="net8.0">
         <dependency id="Microsoft.Extensions.DependencyInjection" version="9.0.3" exclude="Build,Analyzers" />
