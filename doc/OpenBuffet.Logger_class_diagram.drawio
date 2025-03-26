@@ -1,0 +1,183 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36" version="26.1.1">
+  <diagram name="Page-1" id="KH3-5O71MTgOtU35_ycU">
+    <mxGraphModel dx="7320" dy="2453" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="gSxuLLwTSelaYbYnrLGS-1" value="OpenBuffet.Logger Class Diagram" style="swimlane;" vertex="1" parent="1">
+          <mxGeometry x="-3440" y="-760" width="2240" height="1520" as="geometry">
+            <mxRectangle x="-760" y="-413" width="230" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gSxuLLwTSelaYbYnrLGS-3" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;ILoggerService&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;+&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;TryLogging(&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;LogType&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;, &lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;string&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;, out &lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Exception&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;):bool&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ TryCleanLogs(out Exception):bool&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" vertex="1" parent="gSxuLLwTSelaYbYnrLGS-1">
+          <mxGeometry x="107.5" y="700.5" width="290" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="gSxuLLwTSelaYbYnrLGS-4" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;LoggerManager&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- _loggerServices:&amp;nbsp;IEnumerable&amp;lt;ILoggerService&amp;gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ LoggerManager(IEnumerable&amp;lt;ILoggerService&amp;gt;)&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ TryLogging(LogType, string, out Exception):bool&lt;br&gt;+&amp;nbsp;TryCleanLogs(out Exception):bool&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" vertex="1" parent="gSxuLLwTSelaYbYnrLGS-1">
+          <mxGeometry x="42.5" y="191.5" width="420" height="106" as="geometry" />
+        </mxCell>
+        <mxCell id="gSxuLLwTSelaYbYnrLGS-2" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Enumaration&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;LogType&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;NONE&lt;br&gt;SUCCESS&lt;br&gt;ERROR&lt;br&gt;WARNING&lt;br&gt;INFO&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" vertex="1" parent="gSxuLLwTSelaYbYnrLGS-1">
+          <mxGeometry x="1247.5" y="680.5" width="140" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="gSxuLLwTSelaYbYnrLGS-10" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;JsonLogObject&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ LogDate: DateTime&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+&amp;nbsp;LogType:&amp;nbsp;LogType&lt;br&gt;+&amp;nbsp;LogContent:&amp;nbsp;string&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" vertex="1" parent="gSxuLLwTSelaYbYnrLGS-1">
+          <mxGeometry x="757.5" y="490.5" width="290" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="gSxuLLwTSelaYbYnrLGS-11" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;&lt;u&gt;LoggerExtention&lt;/u&gt;&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;+&amp;nbsp;&lt;/span&gt;&lt;u&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;AddOpenBuffetJsonlLogger(this IServiceCollection, Action&amp;lt;JsonlLoggerConfigurator&amp;gt;):&lt;/span&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;IServiceCollection&lt;br&gt;+&amp;nbsp;&lt;/span&gt;&lt;/u&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;&lt;u&gt;AddOpenBuffetTextLogger(this IServiceCollection, Action&amp;lt;TextLoggerConfigurator&amp;gt;):&lt;/u&gt;&lt;/span&gt;&lt;u style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;IServiceCollection&lt;br&gt;+&amp;nbsp;&lt;/span&gt;&lt;/u&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;&lt;u&gt;AddOpenBuffetConsoleLogger(this IServiceCollection):&lt;/u&gt;&lt;/span&gt;&lt;u style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;IServiceCollection&lt;br&gt;+&amp;nbsp;&lt;/u&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;&lt;u&gt;AddOpenBuffetLoggerManager(this IServiceCollection):&lt;/u&gt;&lt;/span&gt;&lt;u style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;IServiceCollection&lt;/u&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" vertex="1" parent="gSxuLLwTSelaYbYnrLGS-1">
+          <mxGeometry x="1597.5" y="189.5" width="600" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="gSxuLLwTSelaYbYnrLGS-12" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;JsonlLoggerConfigurator&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- _path: string&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+&amp;nbsp;Path:string&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" vertex="1" parent="gSxuLLwTSelaYbYnrLGS-1">
+          <mxGeometry x="757.5" y="890.5" width="290" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="gSxuLLwTSelaYbYnrLGS-14" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;TextLoggerConfigurator&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- _path: string&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+&amp;nbsp;Path:string&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" vertex="1" parent="gSxuLLwTSelaYbYnrLGS-1">
+          <mxGeometry x="757.5" y="1260.5" width="290" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="gSxuLLwTSelaYbYnrLGS-15" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;ConsoleLogger&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;+&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;TryCleanLogs(out Exception):bool&lt;br&gt;+&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;TryLogging(LogType, string, out Exception):bool&lt;/span&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" vertex="1" parent="gSxuLLwTSelaYbYnrLGS-1">
+          <mxGeometry x="752.5" y="330.5" width="300" height="76" as="geometry" />
+        </mxCell>
+        <mxCell id="gSxuLLwTSelaYbYnrLGS-16" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;JsonlLogger&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- FILE_TYPE: string&lt;br&gt;- DATE_FORMAT: string&lt;br&gt;- _stringBuilder: StringBuilder&lt;br&gt;- _jsonlConfigurator: JsonlLoggerConfigurator&lt;br&gt;- _logFileDirectory: string&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;JsonlLogger(JsonlLoggerConfigurator)&lt;br&gt;+&amp;nbsp;TryCleanLogs(out Exception):bool&lt;br&gt;+&amp;nbsp;TryLogging(LogType, string, out Exception):bool&lt;br&gt;-&amp;nbsp;GetDestinationFileNameByDate():string&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" vertex="1" parent="gSxuLLwTSelaYbYnrLGS-1">
+          <mxGeometry x="757.5" y="650.5" width="290" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="gSxuLLwTSelaYbYnrLGS-17" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;TextLogger&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- FILE_TYPE: string&lt;br&gt;- DATE_FORMAT: string&lt;br&gt;- _stringBuilder: StringBuilder&lt;br&gt;- _textConfigurator: TextLoggerConfigurator&lt;br&gt;- _logFileDirectory: string&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;JsonlLogger(TextLoggerConfigurator)&lt;br&gt;+&amp;nbsp;TryCleanLogs(out Exception):bool&lt;br&gt;+&amp;nbsp;TryLogging(LogType, string, out Exception):bool&lt;br&gt;-&amp;nbsp;GetDestinationFileNameByDate():string&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" vertex="1" parent="gSxuLLwTSelaYbYnrLGS-1">
+          <mxGeometry x="757.5" y="1010.5" width="290" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="gSxuLLwTSelaYbYnrLGS-19" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="gSxuLLwTSelaYbYnrLGS-1" source="gSxuLLwTSelaYbYnrLGS-3" target="gSxuLLwTSelaYbYnrLGS-15">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="767.5" y="840.5" as="sourcePoint" />
+            <mxPoint x="727.5" y="570.5" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="587.5" y="740.5" />
+              <mxPoint x="587.5" y="368.5" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gSxuLLwTSelaYbYnrLGS-20" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="gSxuLLwTSelaYbYnrLGS-1" source="gSxuLLwTSelaYbYnrLGS-3" target="gSxuLLwTSelaYbYnrLGS-16">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="747.5" y="620.5" as="sourcePoint" />
+            <mxPoint x="907.5" y="620.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gSxuLLwTSelaYbYnrLGS-21" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="gSxuLLwTSelaYbYnrLGS-1" source="gSxuLLwTSelaYbYnrLGS-3" target="gSxuLLwTSelaYbYnrLGS-17">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="747.5" y="880.5" as="sourcePoint" />
+            <mxPoint x="907.5" y="880.5" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="587.5" y="740.5" />
+              <mxPoint x="587.5" y="1100.5" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gSxuLLwTSelaYbYnrLGS-22" value="Use" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="gSxuLLwTSelaYbYnrLGS-1" source="gSxuLLwTSelaYbYnrLGS-17" target="gSxuLLwTSelaYbYnrLGS-14">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="857.5" y="1110.5" as="sourcePoint" />
+            <mxPoint x="1017.5" y="1110.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gSxuLLwTSelaYbYnrLGS-23" value="Use" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="gSxuLLwTSelaYbYnrLGS-1" source="gSxuLLwTSelaYbYnrLGS-16" target="gSxuLLwTSelaYbYnrLGS-12">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="977.5" y="960.5" as="sourcePoint" />
+            <mxPoint x="1137.5" y="960.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gSxuLLwTSelaYbYnrLGS-24" value="Use" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="gSxuLLwTSelaYbYnrLGS-1" source="gSxuLLwTSelaYbYnrLGS-2" target="gSxuLLwTSelaYbYnrLGS-15">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="1077.5" y="850.5" as="sourcePoint" />
+            <mxPoint x="1237.5" y="850.5" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1147.5" y="740.5" />
+              <mxPoint x="1147.5" y="368.5" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gSxuLLwTSelaYbYnrLGS-25" value="Use" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="gSxuLLwTSelaYbYnrLGS-1" source="gSxuLLwTSelaYbYnrLGS-2" target="gSxuLLwTSelaYbYnrLGS-10">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="1077.5" y="590.5" as="sourcePoint" />
+            <mxPoint x="1237.5" y="590.5" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1147.5" y="740.5" />
+              <mxPoint x="1147.5" y="530.5" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gSxuLLwTSelaYbYnrLGS-26" value="Use" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="gSxuLLwTSelaYbYnrLGS-1" source="gSxuLLwTSelaYbYnrLGS-2" target="gSxuLLwTSelaYbYnrLGS-16">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="1077.5" y="770.5" as="sourcePoint" />
+            <mxPoint x="1237.5" y="770.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gSxuLLwTSelaYbYnrLGS-27" value="Use" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="gSxuLLwTSelaYbYnrLGS-1" source="gSxuLLwTSelaYbYnrLGS-2" target="gSxuLLwTSelaYbYnrLGS-17">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="1077.5" y="950.5" as="sourcePoint" />
+            <mxPoint x="1237.5" y="950.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gSxuLLwTSelaYbYnrLGS-28" value="Use" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="gSxuLLwTSelaYbYnrLGS-1" source="gSxuLLwTSelaYbYnrLGS-4" target="gSxuLLwTSelaYbYnrLGS-3">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="507.5" y="480.5" as="sourcePoint" />
+            <mxPoint x="667.5" y="480.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gSxuLLwTSelaYbYnrLGS-29" value="Use" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="gSxuLLwTSelaYbYnrLGS-1" source="gSxuLLwTSelaYbYnrLGS-11" target="gSxuLLwTSelaYbYnrLGS-4">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="967.5" y="400.5" as="sourcePoint" />
+            <mxPoint x="1127.5" y="400.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gSxuLLwTSelaYbYnrLGS-30" value="Use" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="gSxuLLwTSelaYbYnrLGS-1" source="gSxuLLwTSelaYbYnrLGS-11" target="gSxuLLwTSelaYbYnrLGS-15">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="1607.5" y="480.5" as="sourcePoint" />
+            <mxPoint x="1767.5" y="480.5" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1527.5" y="244.5" />
+              <mxPoint x="1527.5" y="368.5" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gSxuLLwTSelaYbYnrLGS-31" value="Use" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="gSxuLLwTSelaYbYnrLGS-1" source="gSxuLLwTSelaYbYnrLGS-11" target="gSxuLLwTSelaYbYnrLGS-16">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="1217.5" y="530.5" as="sourcePoint" />
+            <mxPoint x="1377.5" y="530.5" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1527.5" y="244.5" />
+              <mxPoint x="1527.5" y="650.5" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gSxuLLwTSelaYbYnrLGS-32" value="" style="endArrow=diamondThin;endFill=0;endSize=24;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="gSxuLLwTSelaYbYnrLGS-1" source="gSxuLLwTSelaYbYnrLGS-16" target="gSxuLLwTSelaYbYnrLGS-10">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="1217.5" y="530.5" as="sourcePoint" />
+            <mxPoint x="1377.5" y="530.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gSxuLLwTSelaYbYnrLGS-33" value="Use" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="gSxuLLwTSelaYbYnrLGS-1" source="gSxuLLwTSelaYbYnrLGS-11" target="gSxuLLwTSelaYbYnrLGS-12">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="1217.5" y="650.5" as="sourcePoint" />
+            <mxPoint x="1377.5" y="650.5" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1527.5" y="244.5" />
+              <mxPoint x="1527.5" y="925.5" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gSxuLLwTSelaYbYnrLGS-34" value="Use" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="gSxuLLwTSelaYbYnrLGS-1" source="gSxuLLwTSelaYbYnrLGS-11" target="gSxuLLwTSelaYbYnrLGS-17">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="1217.5" y="1000.5" as="sourcePoint" />
+            <mxPoint x="1377.5" y="1000.5" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1527.5" y="244.5" />
+              <mxPoint x="1527.5" y="1100.5" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gSxuLLwTSelaYbYnrLGS-35" value="Use" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="gSxuLLwTSelaYbYnrLGS-1" source="gSxuLLwTSelaYbYnrLGS-11" target="gSxuLLwTSelaYbYnrLGS-14">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="1647.5" y="720.5" as="sourcePoint" />
+            <mxPoint x="1377.5" y="1000.5" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1527.5" y="244.5" />
+              <mxPoint x="1527.5" y="1295.5" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
